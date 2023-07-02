@@ -7,6 +7,12 @@
     margin: 0;
     padding: 0;
 }
+
+@font-face {
+    font-family: Baskerville;
+    src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+
 :root {
     
     --white: #ffffff;
@@ -21,7 +27,7 @@
 body {
     height: 1000px;
     background-color: var(--offwhite);
-    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Baskerville;
 }
 
 .container {
@@ -62,7 +68,7 @@ hr {
     display: inline-block;
     margin: 20px;
 }
-.navbar .header-links a{
+a {
     text-align: center;
     text-decoration: none;
     font-size: 1.1rem;
@@ -79,20 +85,42 @@ hr {
 
 .card-wrapper {
     text-align: center;
+    margin-top: 40px;
 }
 .card {
-    width: 200px;
-    margin: 30px;
+    width: 210px;
+    margin: 10px;
     display: inline-block;
 }
+
+.card:hover {
+    cursor: pointer;
+}
+
 .card-image {
     width: 100%;
     height: 300px;
-    background-image: url('images/categories/category\ \(1\).jpg');
     background-size: cover;
     background-position: center;
     border-radius: 10px 10px 0 0 ;
 }
+
+#c1 {
+    background-image: url('images/categories/category_1.jpg');
+}
+#c2 {
+    background-image: url('images/categories/category_2.jpg');
+}
+#c3{
+    background-image: url('images/categories/category_3.jpg');
+}
+#c4{
+    background-image: url('images/categories/category_4.jpg');
+}
+#c5 {
+    background-image: url('images/categories/category_5.jpg');
+}
+
 .card-body {
     width: 100%;
     text-align: center;
@@ -103,4 +131,79 @@ hr {
 .card-body h3 {
     margin: 0;
     padding: 20px;
+}
+
+/*! ********************** */
+/*! HOT DISH CARD SETTINGS */
+/*! ********************** */
+
+.container h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.hot-dish-card {
+    width: 270px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.hot-dish-card-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+#h1 {
+    background-image: url('images/hot_dishes/hot_1.jpg');
+}
+#h2 {
+    background-image: url('images/hot_dishes/hot_2.jpg');
+}
+#h3 {
+    background-image: url('images/hot_dishes/hot_3.jpg');
+}
+#h4 {
+    background-image: url('images/hot_dishes/hot_4.jpg');
+}
+
+
+/*! *************** */
+/*! FOOTER SETTINGS */
+/*! *************** */
+
+footer {
+    background-color: var(--gold);
+    color: var(--white);
+    font-size: 14px;
+}
+
+footer .container {
+    padding: 35px;
+}
+
+footer .social-media {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+footer .social-media a {
+    margin: 10px;
+}
+
+footer .social-media img {
+    width: 15px;
+    height: 15px;
+    filter: invert();
+}
+
+footer .social-media img:hover {
+    width: 15px;
+    height: 15px;
+    filter: invert();
+    filter: opacity(0.8);
 }
