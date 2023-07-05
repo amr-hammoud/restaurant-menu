@@ -26,6 +26,12 @@ body {
 	font-family: Baskerville;
 }
 
+.page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 90px;
+}
+
 .container {
 	width: 80%;
 	max-width: 1240px;
@@ -193,6 +199,9 @@ footer {
 	color: var(--white);
 	font-size: 14px;
 	width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 90px;
 }
 
 footer .container {
