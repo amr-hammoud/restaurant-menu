@@ -25,7 +25,6 @@
 }
 
 body {
-    height: 1000px;
     background-color: var(--offwhite);
     font-family: Baskerville;
 }
@@ -84,13 +83,15 @@ a {
 /*! ************* */
 
 .card-wrapper {
-    text-align: center;
+    display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: center;
     margin-top: 40px;
 }
 .card {
     width: 210px;
     margin: 10px;
-    display: inline-block;
 }
 .card:hover {
     cursor: pointer;
